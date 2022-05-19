@@ -1,0 +1,117 @@
+/* Global Styles
+-------------------- */
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 2rem;
+    font-family: 'Kumbh Sans';
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    /* Help me Here */
+    /* background-position: ; */
+    /* background-size: ; */
+    background-color: var(--dark-cyan);
+    
+}
+
+footer {
+    margin-top: 1rem;
+}
+
+.user-name, .stat {
+    font-size: 18px;
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+/* Main Section 
+------------------- */
+
+main {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;    
+    width: 100%;
+    max-width: calc(414px - 2rem);
+    text-align: center;
+
+}
+
+.card .bg-pattern {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.profile-img {
+    margin-top: -50px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.user-info {
+    margin: 1.5rem 0;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.user-name {
+    margin-right: 1rem;
+}
+
+.user-age {
+    font-size: 18px;
+    color: var(--dark-grayish-blue);
+}
+
+.user-location {
+    color: var(--dark-grayish-blue);
+}
+
+.social-stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.8rem 0;
+    border-top: 1px solid hsl(0, 0%, 90%);;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+}
+
+.stat-label {
+    color: var(--dark-gray);
+    font-size: .7rem;
+    letter-spacing: 1px;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(1, 60%, 55%); }
