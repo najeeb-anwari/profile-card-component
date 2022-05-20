@@ -16,10 +16,10 @@
 body {
     padding: 2rem;
     font-family: 'Kumbh Sans';
+    background-repeat: no-repeat;
     background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
-    /* Help me Here */
-    /* background-position: ; */
-    /* background-size: ; */
+    background-size: 100vh 100vh, 100vh 100vh;
+    background-position: left -70vh top -55vh, right -70vh bottom -50vh;
     background-color: var(--dark-cyan);
     
 }
@@ -115,3 +115,10 @@ main {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(1, 60%, 55%); }
+
+@media (min-width: 768px) {
+    body {
+        background-size: 60vw 60vw, 60vw 60vw;
+        background-position: left -15vw top -30vw, right -10vw bottom -40vw;
+    }
+}
