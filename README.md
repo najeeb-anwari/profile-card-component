@@ -21,7 +21,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-![](./design/desktop-design.jpg)
+![](./screenshots/desktop-design.png)
+![](./screenshots/mobile-design.png)
 
 
 ### Links
